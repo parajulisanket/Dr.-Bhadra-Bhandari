@@ -73,7 +73,7 @@
 
       <!-- Mobile Menu -->
       <nav class="mobile-menu border-y-2" id="mobileMenu">
-        <a href="#" class="text-[#B33791]">Home</a>
+        <a href="#" class="text-[#B33791] font-semibold">Home</a>
         <a href="about.html">About</a>
         <a href="news.html">News</a>
         <a href="blog.html">blog</a>
@@ -86,7 +86,7 @@
     <!-- Hero Section -->
     <section
       id="hero"
-      class="mt-6 md:mt-12 min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-[100px] overflow-x-hidden"
+      class="mt-6 lg:-mt-6 min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-[100px] overflow-x-hidden"
     >
       <div
         class="w-full max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
@@ -214,7 +214,7 @@
 
     <!-- Scroll Down Button with Text (Hidden on Mobile) -->
     <div
-      class="absolute bottom-5 left-1/2 transform -translate-x-1/2 text-center z-50 hidden lg:block"
+      class="absolute bottom-12 left-1/2 transform -translate-x-1/2 text-center z-50 hidden lg:block"
     >
       <a
         href="#experience"
@@ -306,7 +306,7 @@
             <div class="mt-1">
               <img src="./assets/news.png" class="h-[30px] w-[30px]" alt="" />
             </div>
-            <h2 class="text-2xl sm:text-3xl text-[#6B1E6F] mb-8 text-center">
+            <h2 class="text-2xl sm:text-3xl text-[#6B1E6F] mb-8 text-center font-semibold">
               In News
             </h2>
           </div>
@@ -451,7 +451,7 @@
           <div class="mt-1">
             <img src="./assets/video.png" class="h-[30px] w-[30px]" alt="" />
           </div>
-          <h2 class="text-2xl sm:text-3xl text-[#6B1E6F] mb-8 text-center">
+          <h2 class="text-2xl sm:text-3xl text-[#6B1E6F] mb-8 text-center font-semibold">
             Videos
           </h2>
         </div>
@@ -657,7 +657,7 @@
             <div class="mt-1">
               <img src="./assets/blogs.png" class="h-[30px] w-[30px]" alt="" />
             </div>
-            <h2 class="text-2xl sm:text-3xl text-[#6B1E6F] mb-8 text-center">
+            <h2 class="text-2xl sm:text-3xl text-[#6B1E6F] mb-8 text-center font-semibold">
               Blogs
             </h2>
           </div>
@@ -777,7 +777,7 @@
                 alt="Articles Icon"
               />
             </div>
-            <h2 class="text-2xl sm:text-3xl text-[#6B1E6F] text-center">
+            <h2 class="text-2xl sm:text-3xl text-[#6B1E6F] text-center font-semibold">
               Article
             </h2>
           </div>
@@ -789,16 +789,19 @@
             <i
               class="fas fa-arrow-right text-xl hover:text-[#6B1E6F] cursor-pointer"
               id="moveRight"
-            ></i>   
+            ></i>
           </div>
         </div>
       </div>
 
       <!-- articel -->
-      <div class="flex flex-col lg:flex-row justify-between mt-20 mx-4 gap-8">
+      <div
+        class="flex flex-col lg:flex-row justify-between mt-20 mx-4 space-y-4"
+      >
         <!-- article card 1 -->
-        <div
-          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden"
+        <a
+          href="/blog.html"
+          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-transform duration-300 hidden hover:scale-110"
           id="article1"
         >
           <div class="border rounded-lg shadow-lg hover:shadow-2xl">
@@ -811,7 +814,8 @@
             </div>
             <div class="p-4">
               <h3 class="text-md font-semibold mt-4 text-[#6B1E6F]">
-                Promoting Women's Empowerment and Social Transformation
+                Promoting Women's Empowerment and Social Transformation in
+                Various Sectors
               </h3>
               <p class="text-gray-700 text-sm mt-2">
                 Dr. Bhandari advocates gender equality, empowering women through
@@ -819,11 +823,12 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
 
         <!-- Article 2  -->
-        <div
-          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden"
+        <a
+          href="/blog.html"
+          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden hover:scale-110"
           id="article2"
         >
           <div class="border rounded-lg shadow-lg hover:shadow-2xl">
@@ -844,10 +849,11 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
         <!-- Article 3 -->
-        <div
-          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden"
+        <a
+          href="/blog.html"
+          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden hover:scale-110"
           id="article3"
         >
           <div class="border rounded-lg shadow-lg hover:shadow-2xl">
@@ -861,6 +867,7 @@
             <div class="p-4">
               <h3 class="text-md font-semibold mt-4 text-[#6B1E6F]">
                 Dr. Bhadra Bhandari Leads Women Wisdom Nepal for Social Change
+                iin Society
               </h3>
               <p class="text-gray-700 text-sm mt-2">
                 Leading Nari Drishti Nepal, Dr. Bhandari empowers marginalized
@@ -868,10 +875,11 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
         <!-- Hidden Articles (Article 4) -->
-        <div
-          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden"
+        <a
+          href="/blog.html"
+          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden hover:scale-110"
           id="article4"
         >
           <div class="border rounded-lg shadow-lg hover:shadow-2xl">
@@ -884,7 +892,8 @@
             </div>
             <div class="p-4">
               <h3 class="text-md font-semibold mt-4 text-[#6B1E6F]">
-                Champions for Women's Rights and Inclusive Development
+                Champions for Women's Rights and Inclusive Development in
+                Different Areas
               </h3>
               <p class="text-gray-700 text-sm mt-2">
                 Dr. Bhandari fosters inclusive growth, focusing on women’s
@@ -892,10 +901,11 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
         <!-- Article 5 -->
-        <div
-          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden"
+        <a
+          href="/blog.html"
+          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden hover:scale-110"
           id="article5"
         >
           <div class="border rounded-lg shadow-lg hover:shadow-2xl">
@@ -908,7 +918,8 @@
             </div>
             <div class="p-4">
               <h3 class="text-md font-semibold mt-4 text-[#6B1E6F]">
-                Works to Elevate Women's Participation in Politics
+                Works to Elevate Women's Participation in Politics and Social
+                Work
               </h3>
               <p class="text-gray-700 text-sm mt-2">
                 She encourages women to engage in politics, influencing policy
@@ -916,11 +927,12 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
 
         <!-- Article 6 -->
-        <div
-          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden"
+        <a
+          href="/blog.html"
+          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden hover:scale-110"
           id="article6"
         >
           <div class="border rounded-lg shadow-lg hover:shadow-2xl">
@@ -933,7 +945,7 @@
             </div>
             <div class="p-4">
               <h3 class="text-md font-semibold mt-4 text-[#6B1E6F]">
-                Leadership Programs Focus on Women's Development
+                Leadership Programs Focus on Women's Development and Changes
               </h3>
               <p class="text-gray-700 text-sm mt-2">
                 Her leadership programs strengthen women’s skills, providing
@@ -941,7 +953,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
 

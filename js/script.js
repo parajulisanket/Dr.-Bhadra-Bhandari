@@ -151,63 +151,58 @@ function closeModal() {
   modal.classList.add("hidden");
 }
 
-// in index article part move left and right
 window.addEventListener("DOMContentLoaded", function () {
   const articles = document.querySelectorAll(".article-content");
   const moveLeft = document.getElementById("moveLeft");
   const moveRight = document.getElementById("moveRight");
   let currentIndex = 1; // Start with the second article in the center
 
-  // Function to update the visibility and size of articles
   function updateArticles() {
     articles.forEach((article, index) => {
       article.classList.remove(
-        "scale-110",
-        "scale-100",
         "transition-all",
+        "border-4",
+        "border-[#B33791]",
+        "shadow-xl",
         "hidden"
       );
 
-      // Show the current article in the center with a temporary scale effect
-      if (index === currentIndex) {
-        article.classList.add("scale-110", "transition-all");
+      // Show the current, previous, and next articles
+      if (
+        index === currentIndex ||
+        index === currentIndex - 1 ||
+        index === currentIndex + 1
+      ) {
+        article.classList.add("transition-all");
         article.classList.remove("hidden");
-
-        // After a brief period (0.5 seconds), return to normal size
-        setTimeout(() => {
-          article.classList.remove("scale-110");
-          article.classList.add("scale-100");
-        }, 400);
-      } else if (index === currentIndex - 1 || index === currentIndex + 1) {
-        article.classList.add("scale-110", "transition-all");
-        article.classList.remove("hidden");
+        // Optional: Add a highlight to the center article
+        if (index === currentIndex) {
+          article.classList.add("shadow-xl");
+        }
       } else {
         article.classList.add("hidden");
       }
     });
   }
 
-  // Handle navigation when moving right
   moveRight.addEventListener("click", () => {
     if (currentIndex < articles.length - 1) {
       currentIndex++;
     } else {
-      currentIndex = 0; // Loop back to the first article
+      currentIndex = 0;
     }
     updateArticles();
   });
 
-  // Handle navigation when moving left
   moveLeft.addEventListener("click", () => {
     if (currentIndex > 0) {
       currentIndex--;
     } else {
-      currentIndex = articles.length - 1; // Loop to the last article
+      currentIndex = articles.length - 1;
     }
     updateArticles();
   });
 
-  // Initialize the articles when the page loads
   updateArticles();
 });
 
@@ -250,5 +245,5 @@ ScrollReveal().reveal(".reveal-exp-card", {
   scale: 0.97,
   opacity: 0,
   easing: "cubic-bezier(0.5, 0, 0, 1)",
-  reset: true, 
+  reset: true,
 });
