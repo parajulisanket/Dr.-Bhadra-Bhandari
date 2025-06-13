@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/bhadrabhnadari.png" type="image/png" />
+    <title>Dr. Bhadra Bhandari</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Back to Top Button -->
+    <button
+      id="backToTop"
+      class="fixed bottom-6 right-3 z-50 bg-[#B33791] text-white text-xl p-4 rounded-full shadow-lg hover:shadow-2xl transition-all duration-300 lg:hidden"
+    >
+      ↑
+    </button>
+
+    <header
+      id="header"
+      class="flex justify-between items-center px-[24px] lg:px-20 py-4 fixed w-full z-50 top-0"
+    >
+      <!-- Symbolizes trust, authority, and professionalism. Very common in government and diplomatic websites. -->
+      <h1
+        class="text-2xl md:text-3xl tracking-tight leading-tight cursor-pointer"
+        onclick="window.location.href='index.html'"
+      >
+        <span class="bg-clip-text text-[#B33791] font-medium">
+          Dr. Bhadra Bhandari
+        </span>
+      </h1>
+      <nav class="flex gap-8 text-[15px] max-lg:gap-6 max-lg:hidden">
+        <a href="#" class="text-[#B33791] font-semibold">Home</a>
+        <a href="about.html">About</a>
+        <a href="news.html">News</a>
+        <a href="blog.html">blog</a>
+        <a href="videos.html">Videos</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger lg:hidden text-[22px]" id="hamburger">
+        &#9776;
+      </button>
+
+      <!-- Mobile Menu -->
+      <nav class="mobile-menu border-y-2" id="mobileMenu">
+        <a href="#" class="text-[#B33791]">Home</a>
+        <a href="about.html">About</a>
+        <a href="news.html">News</a>
+        <a href="blog.html">blog</a>
+        <a href="videos.html">Videos</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="hero"
+      class="mt-6 md:mt-12 min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-[100px] overflow-x-hidden"
+    >
+      <div
+        class="w-full max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+      >
+        <!-- Hero Left Part -->
+        <div class="space-y-6 text-left">
+          <!-- Heading -->
+          <div class="space-y-3 mt-10">
+            <h1
+              class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 leading-tight typing-effect"
+            >
+              <span
+                class="bg-gradient-to-r from-[#7D8597] via-[#7D8597] to-[#7D8597] bg-clip-text text-transparent"
+              >
+                Dr. Bhandra Bhandari
+              </span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p
+              class="text-base sm:text-lg md:text-xl text-gray-700 tracking-wide animate-slide-up"
+            >
+              Politician
+              <span class="text-[#7D8597] font-medium">|</span> Social Activist
+              <span class="text-[#7D8597] font-medium">|</span> Business Woman
+            </p>
+          </div>
+
+          <div class="flex flex-wrap gap-4">
+            <!-- Learn More -->
+            <button
+              onclick="window.location.href='about.html'"
+              class="flex items-center gap-2 bg-white border border-[#B33791] text-[#B33791] hover:bg-[#B33791] hover:text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
+              Learn More
+            </button>
+
+            <!-- Get in Touch -->
+            <button
+              onclick="window.location.href='contact.html'"
+              class="flex items-center gap-2 bg-[#6B1E6F] hover:bg-white text-white hover:text-[#6B1E6F] hover:border hover:border-[#6B1E6F] font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2V8z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 8l-9 6-9-6"
+                />
+              </svg>
+              Get in Touch
+            </button>
+          </div>
+        </div>
+
+        <!-- Swiper Container -->
+        <div class="relative w-full">
+          <!-- Gradient Background Behind Carousel -->
+
+          <!-- Swiper -->
+          <div
+            class="swiper mySwiper2 relative z-10 w-full max-w-2xl mx-auto rounded-2xl overflow-hidden h-[300px] sm:h-[360px] md:h-[420px] lg:h-[500px]"
+          >
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div class="swiper-slide">
+                <img
+                  src="./assets/landing1.jpeg"
+                  alt="Image 1"
+                  class="w-full h-full object-cover rounded-2xl"
+                />
+              </div>
+              <!-- Slide 2 -->
+              <div class="swiper-slide">
+                <img
+                  src="./assets/landing2.jpeg"
+                  alt="Image 2"
+                  class="w-full h-full object-cover rounded-2xl"
+                />
+              </div>
+              <!-- Slide 3 -->
+              <div class="swiper-slide">
+                <img
+                  src="./assets/landing3.jpeg"
+                  alt="Image 3"
+                  class="w-full h-full object-cover rounded-2xl"
+                />
+              </div>
+              <!-- Slide 4 -->
+              <div class="swiper-slide">
+                <img
+                  src="./assets/landing4.jpeg"
+                  alt="Image 4"
+                  class="w-full h-full object-cover rounded-2xl"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll Down Button with Text (Hidden on Mobile) -->
+    <div
+      class="absolute bottom-5 left-1/2 transform -translate-x-1/2 text-center z-50 hidden lg:block"
+    >
+      <a
+        href="#experience"
+        class="text-gray-500 text-sm animate-bounce duration-2000 flex flex-col items-center hover:text-red-800"
+      >
+        <span class="mb-1">Scroll Down</span>
+        <i class="fa-solid fa-computer-mouse text-2xl"></i>
+      </a>
+    </div>
+
+    <!-- expereince part -->
+    <section id="experience" class="py-16 px-6 md:px-12 lg:px-20 mb-10">
+      <div class="max-w-7xl mx-auto relative z-10">
+        <div class="flex gap-2 justify-center mb-2">
+          <h2
+            class="text-3xl sm:text-4xl font-bold text-[#6B1E6F] text-center drop-shadow-sm tracking-tight"
+          >
+            Experience & Contributions
+          </h2>
+        </div>
+        <p class="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">
+          Dr. Bhadra Bhandari has devoted her life to public service, social
+          leadership, and political reform—championing women's empowerment and
+          driving change across Nepal.
+        </p>
+        <div class="grid gap-8 md:grid-cols-2">
+          <!-- Card 1 -->
+          <div
+            class="bg-[#F3F4F6] p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 reveal-exp-card"
+          >
+            <h3 class="text-xl font-bold text-[#B33791] mb-2">
+              Chairperson, Women Wisdom Nepal
+            </h3>
+            <p class="text-sm text-[#7D8597] mb-2">Present</p>
+            <p class="text-gray-700">
+              Leading support initiatives for widowed women through empowerment
+              programs, education, and legal awareness.
+            </p>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-[#F3F4F6] p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 reveal-exp-card"
+          >
+            <h3 class="text-xl font-bold text-[#B33791] mb-2">
+              Treasurer, Nepali Congress – Bagmati Province
+            </h3>
+            <p class="text-sm text-[#7D8597] mb-2">Elected 2081 B.S.</p>
+            <p class="text-gray-700">
+              Responsible for financial planning and provincial-level party
+              operations in Nepal's leading democratic institution.
+            </p>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-[#F3F4F6] p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 reveal-exp-card"
+          >
+            <h3 class="text-xl font-bold text-[#B33791] mb-2">
+              Member, Lions Club Nepal
+            </h3>
+            <p class="text-sm text-[#7D8597] mb-2">24 Years</p>
+            <p class="text-gray-700">
+              Active service in health camps, disaster relief, and community
+              development through one of the world’s largest service networks.
+            </p>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-[#F3F4F6] p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 reveal-exp-card"
+          >
+            <h3 class="text-xl font-bold text-[#B33791] mb-2">
+              Former Director, Capital FM
+            </h3>
+            <p class="text-sm text-[#7D8597] mb-2">Past Role</p>
+            <p class="text-gray-700">
+              Provided leadership in media programming and public engagement
+              through one of Nepal’s prominent FM radio platforms.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 3 in news -->
+    <hr class="border-[#7D8597] max-w-xs mx-auto my-6" />
+    <section class="py-16 px-6 md:px-12 lg:px-20 my-10">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-center">
+          <div class="flex gap-2">
+            <div class="mt-1">
+              <img src="./assets/news.png" class="h-[30px] w-[30px]" alt="" />
+            </div>
+            <h2 class="text-2xl sm:text-3xl text-[#6B1E6F] mb-8 text-center">
+              In News
+            </h2>
+          </div>
+
+          <div class="group inline-block mb-8">
+            <button
+              onclick="window.location.href='news.html'"
+              class="px-4 py-2 bg-[#4B5563] hover:bg-[#6B1E6F] text-white rounded-lg text-medium mt-2 transition-all duration-300 ease-in-out flex items-center gap-2"
+            >
+              View all
+              <span
+                class="transform transition-transform duration-300 group-hover:translate-x-1 max-md:mb-1"
+                >→</span
+              >
+            </button>
+          </div>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <!-- News Card -->
+          <div
+            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="assets/news1.jpeg"
+              alt="News 1"
+              class="w-full h-52 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-semibold text-[#4B5563] mb-2">
+                Dr. Bhandari Addresses National Assembly
+              </h3>
+              <p class="text-gray-700 text-sm">
+                Focused on inclusive growth and rural development...
+              </p>
+            </div>
+          </div>
+
+          <!-- Repeat for 5 more news cards -->
+          <div
+            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="assets/news2.jpeg"
+              alt="News 2"
+              class="w-full h-52 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-semibold text-[#4B5563] mb-2">
+                Women Empowerment Conference 2024
+              </h3>
+              <p class="text-gray-700 text-sm">
+                Dr. Bhandari calls for stronger representation of women in
+                leadership...
+              </p>
+            </div>
+          </div>
+
+          <!-- News 3 -->
+          <div
+            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="assets/news3.jpeg"
+              alt="News 3"
+              class="w-full h-52 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-semibold text-[#4B5563] mb-2">
+                Visit to Rural Education Centers
+              </h3>
+              <p class="text-gray-700 text-sm">
+                Highlighting the importance of education equity...
+              </p>
+            </div>
+          </div>
+
+          <!-- News 4 -->
+          <div
+            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="assets/news4.jpeg"
+              alt="News 4"
+              class="w-full h-52 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-semibold text-[#4B5563] mb-2">
+                Healthcare Reform Plans Introduced
+              </h3>
+              <p class="text-gray-700 text-sm">
+                Introducing accessible healthcare for all districts...
+              </p>
+            </div>
+          </div>
+
+          <!-- News 5 -->
+          <div
+            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="assets/news5.jpeg"
+              alt="News 5"
+              class="w-full h-52 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-semibold text-[#4B5563] mb-2">
+                UN Assembly Speech
+              </h3>
+              <p class="text-gray-700 text-sm">
+                Emphasizing Nepal’s role in sustainable development...
+              </p>
+            </div>
+          </div>
+
+          <!-- News 6 -->
+          <div
+            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition duration-300"
+          >
+            <img
+              src="assets/news6.jpeg"
+              alt="News 6"
+              class="w-full h-52 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-semibold text-[#4B5563] mb-2">
+                Community Outreach Program Launched
+              </h3>
+              <p class="text-gray-700 text-sm">
+                New social initiative launched in remote villages...
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section 4 - videos -->
+    <hr class="border-[#7D8597] max-w-xs mx-auto my-6" />
+    <div class="videos px-[24px] lg:px-[100px] w-full pt-10 pb-16 my-10">
+      <div class="flex justify-between items-center">
+        <div class="flex gap-2">
+          <div class="mt-1">
+            <img src="./assets/video.png" class="h-[30px] w-[30px]" alt="" />
+          </div>
+          <h2 class="text-2xl sm:text-3xl text-[#6B1E6F] mb-8 text-center">
+            Videos
+          </h2>
+        </div>
+
+        <div class="group inline-block mb-8">
+          <button
+            onclick="window.location.href='videos.html'"
+            class="px-4 py-2 bg-[#4B5563] hover:bg-[#6B1E6F] text-white rounded-lg text-medium mt-2 transition-all duration-300 ease-in-out flex items-center gap-2"
+          >
+            View all
+            <span
+              class="transform transition-transform duration-300 group-hover:translate-x-1"
+              >→</span
+            >
+          </button>
+        </div>
+      </div>
+      <div
+        class="grid grid-cols-2 max-sm:grid-cols-1 lg:grid-cols-3 mt-2 gap-6"
+      >
+        <!-- Modal for Video Playback -->
+        <div
+          id="videoModal"
+          class="fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center hidden"
+        >
+          <div class="relative w-[90%] max-w-4xl aspect-video">
+            <iframe
+              id="videoIframe"
+              class="w-full h-full rounded-lg"
+              src=""
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <button
+              onclick="closeModal()"
+              class="absolute top-2 right-4 text-white text-2xl font-bold bg-red-600 hover:bg-red-700 rounded-full w-10 h-10 flex items-center justify-center shadow-md transition"
+            >
+              &times;
+            </button>
+          </div>
+        </div>
+
+        <!-- Video 1 Thumbnail Trigger -->
+        <div
+          onclick="openModal('Gt9DKsC9ixY')"
+          class="flex flex-col border shadow-lg rounded-xl hover:scale-105 transition-all bg-white cursor-pointer"
+        >
+          <div class="relative pt-[56.25%]">
+            <img
+              src="/assets/img9.jpeg"
+              alt="Video 1"
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl"
+            />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img
+                src="./assets/youtubeLogo.png"
+                alt="YouTube Logo"
+                class="w-28 h-28 object-contain"
+              />
+            </div>
+          </div>
+          <p class="text-gray-700 font-semibold p-4">
+            नेपालमा अमेरिकी चासो घट्दो, विश्व राजनीतिमा ट्रम्प हावी : महेश
+            दाहाल, पूर्व राजदूत
+          </p>
+        </div>
+
+        <!-- Video 2 Thumbnail Trigger -->
+        <div
+          onclick="openModal('DdeoerScEs0')"
+          class="flex flex-col border shadow-lg rounded-xl hover:scale-105 transition-all bg-white cursor-pointer"
+        >
+          <div class="relative pt-[56.25%]">
+            <img
+              src="/assets/img15.jpeg"
+              alt="Video 2"
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl"
+            />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img
+                src="./assets/youtubeLogo.png"
+                alt="YouTube Logo"
+                class="w-28 h-28 object-contain"
+              />
+            </div>
+          </div>
+          <p class="text-gray-700 font-semibold p-4">
+            Mahesh Raj Dahal (Ambassador to Australia) | Good Morning Nepal - 27
+            February 2021
+          </p>
+        </div>
+
+        <!-- Video 3 - Thumbnail Modal Trigger -->
+        <div
+          onclick="openModal('kqk1HGlFB4U')"
+          class="flex flex-col border shadow-lg rounded-xl hover:scale-105 transition-all bg-white cursor-pointer"
+        >
+          <div class="relative pt-[56.25%]">
+            <img
+              src="/assets/news1.jpeg"
+              alt="Video 3"
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl"
+            />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img
+                src="./assets/youtubeLogo.png"
+                alt="YouTube Logo"
+                class="w-28 h-28 object-contain"
+              />
+            </div>
+          </div>
+          <p class="text-gray-700 font-semibold p-4">
+            A Talk with Mahesh Raj Dahal, Ambassador of Nepal to Australia
+          </p>
+        </div>
+
+        <!-- Video 4 - Thumbnail Modal Trigger -->
+        <div
+          onclick="openModal('XFgQoOrOPnA')"
+          class="flex flex-col border shadow-lg rounded-xl hover:scale-105 transition-all bg-white cursor-pointer"
+        >
+          <div class="relative pt-[56.25%]">
+            <img
+              src="/assets/img6.jpeg"
+              alt="Video 4"
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl"
+            />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img
+                src="./assets/youtubeLogo.png"
+                alt="YouTube Logo"
+                class="w-28 h-28 object-contain"
+              />
+            </div>
+          </div>
+          <p class="text-gray-700 font-semibold p-4">
+            AAERI NEPAL | 3rd Annual General Meeting | H.E. Mahesh Dahal,
+            Nepalese Ambassador to Australia
+          </p>
+        </div>
+
+        <!-- Video 5 - Thumbnail Modal Trigger -->
+        <div
+          onclick="openModal('cmziCdLqJp4')"
+          class="flex flex-col border shadow-lg rounded-xl hover:scale-105 transition-all bg-white cursor-pointer"
+        >
+          <div class="relative pt-[56.25%]">
+            <img
+              src="/assets/news4.jpeg"
+              alt="Video 5"
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl"
+            />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img
+                src="./assets/youtubeLogo.png"
+                alt="YouTube Logo"
+                class="w-28 h-28 object-contain"
+              />
+            </div>
+          </div>
+          <p class="text-gray-900 font-semibold p-4">
+            His Excellency Mr Mahesh Raj Dahal, Ambassador of Nepal to Australia
+            with HB Tamrakar ( COVID-19 )
+          </p>
+        </div>
+
+        <!-- Video 6 - Thumbnail Modal Trigger -->
+        <div
+          onclick="openModal('uxMhWBIOqS8')"
+          class="flex flex-col border shadow-lg rounded-xl hover:scale-105 transition-all bg-white cursor-pointer"
+        >
+          <div class="relative pt-[56.25%]">
+            <img
+              src="/assets/blog2.jpeg"
+              alt="Video 6"
+              class="absolute top-0 left-0 w-full h-full object-cover rounded-t-xl"
+            />
+            <div class="absolute inset-0 flex items-center justify-center">
+              <img
+                src="./assets/youtubeLogo.png"
+                alt="YouTube Logo"
+                class="w-28 h-28 object-contain"
+              />
+            </div>
+          </div>
+          <p class="text-gray-700 font-semibold p-4">
+            Mahesh Dahal || Former Ambassador To Australia || 4th Annual General
+            Meeting 2022 ||
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 5 blogs -->
+    <section
+      class="relative bg-white px-[24px] lg:px-[100px] w-full pt-10 pb-16 my-10"
+    >
+      <div class="max-w-7xl mx-auto">
+        <!-- Title -->
+        <div class="flex justify-between items-center">
+          <div class="flex gap-2">
+            <div class="mt-1">
+              <img src="./assets/blogs.png" class="h-[30px] w-[30px]" alt="" />
+            </div>
+            <h2 class="text-2xl sm:text-3xl text-[#6B1E6F] mb-8 text-center">
+              Blogs
+            </h2>
+          </div>
+
+          <div class="group inline-block mb-8">
+            <button
+              onclick="window.location.href='blog.html'"
+              class="px-4 py-2 bg-[#4B5563] hover:bg-[#6B1E6F] text-white rounded-lg text-medium mt-2 transition-all duration-300 ease-in-out flex items-center gap-2"
+            >
+              View all
+              <span
+                class="transform transition-transform duration-300 group-hover:translate-x-1"
+                >→</span
+              >
+            </button>
+          </div>
+        </div>
+
+        <!-- Blog Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12 relative z-10">
+          <!-- Blog Card 1-->
+          <div
+            class="relative bg-[#F9FAFB] shadow-lg rounded-3xl overflow-hidden hover:-translate-y-1 transition duration-300"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="assets/blog1.avif"
+                alt="Blog 1"
+                class="w-full h-full object-cover transform -skew-y-3 origin-top-left scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-[#6B1E6F] mb-2">
+                Breaking Barriers in Politics
+              </h3>
+              <p class="text-gray-700 text-sm mb-4">
+                How women leaders like Dr. Bhadra Bhandari are reshaping Nepal’s
+                political discourse...
+              </p>
+              <a
+                href="/blog.html#blog1"
+                class="text-[#B33791] font-medium text-sm hover:underline"
+                >Read More →</a
+              >
+            </div>
+          </div>
+
+          <!-- Blog Card 2-->
+          <div
+            class="relative bg-[#F3EDF7] shadow-lg rounded-3xl overflow-hidden hover:-translate-y-1 transition duration-300"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="assets/blog2.jpeg"
+                alt="Blog 2"
+                class="w-full h-full object-cover transform scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-[#6B1E6F] mb-2">
+                Empowering Rural Nepal
+              </h3>
+              <p class="text-gray-700 text-sm mb-4">
+                The importance of local development, education, and healthcare
+                in transforming lives...
+              </p>
+              <a
+                href="/blog.html#blog2"
+                class="text-[#B33791] font-medium text-sm hover:underline"
+                >Read More →</a
+              >
+            </div>
+          </div>
+
+          <!-- Blog Card 3-->
+          <div
+            class="relative bg-[#FEF2F8] shadow-lg rounded-3xl overflow-hidden hover:-translate-y-1 transition duration-300"
+          >
+            <div class="h-48 overflow-hidden">
+              <img
+                src="assets/blog3.jpg"
+                alt="Blog 3"
+                class="w-full h-full object-cover transform scale-110"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-[#6B1E6F] mb-2">
+                A Voice at the Global Stage
+              </h3>
+              <p class="text-gray-700 text-sm mb-4">
+                From the UN to regional summits — Dr. Bhandari’s diplomatic
+                presence continues to grow...
+              </p>
+              <a
+                href="/blog.html#blog3"
+                class="text-[#B33791] font-medium text-sm hover:underline"
+                >Read More →</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- article section -->
+    <section
+      class="relative bg-white px-6 lg:px-[100px] w-full pt-10 pb-16 my-10"
+    >
+      <div class="max-w-7xl mx-auto">
+        <!-- Title and Arrows -->
+        <div class="flex justify-between items-center mb-8">
+          <div class="flex gap-2 items-center">
+            <div class="mt-1">
+              <img
+                src="./assets/articles.png"
+                class="h-[30px] w-[30px]"
+                alt="Articles Icon"
+              />
+            </div>
+            <h2 class="text-2xl sm:text-3xl text-[#6B1E6F] text-center">
+              Article
+            </h2>
+          </div>
+          <div class="flex gap-4 items-center">
+            <i
+              class="fas fa-arrow-left text-xl hover:text-[#6B1E6F] cursor-pointer"
+              id="moveLeft"
+            ></i>
+            <i
+              class="fas fa-arrow-right text-xl hover:text-[#6B1E6F] cursor-pointer"
+              id="moveRight"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- articel -->
+      <div class="flex flex-col lg:flex-row justify-between mt-20 mx-4 gap-8">
+        <!-- article card 1 -->
+        <div
+          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden"
+          id="article1"
+        >
+          <div class="border rounded-lg shadow-lg hover:shadow-2xl">
+            <div class="relative w-full h-[200px]">
+              <img
+                src="/assets/article1.jpeg"
+                alt="Article Image 1"
+                class="w-full h-full object-cover rounded-t-lg"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-md font-semibold mt-4 text-[#6B1E6F]">
+                Promoting Women's Empowerment and Social Transformation
+              </h3>
+              <p class="text-gray-700 text-sm mt-2">
+                Dr. Bhandari advocates gender equality, empowering women through
+                leadership initiatives.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 2  -->
+        <div
+          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden"
+          id="article2"
+        >
+          <div class="border rounded-lg shadow-lg hover:shadow-2xl">
+            <div class="relative w-full h-[200px]">
+              <img
+                src="/assets/img9.jpeg"
+                alt="Article Image 2"
+                class="w-full h-full object-cover rounded-t-lg"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-md font-semibold mt-4 text-[#6B1E6F]">
+                Dr. Bhadra Bhandari Speaks on Gender Justice and Women's Rights
+              </h3>
+              <p class="text-gray-700 text-sm mt-2">
+                She emphasizes gender justice, advocating for women’s equality
+                in governance.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Article 3 -->
+        <div
+          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden"
+          id="article3"
+        >
+          <div class="border rounded-lg shadow-lg hover:shadow-2xl">
+            <div class="relative w-full h-[200px]">
+              <img
+                src="/assets/news3.jpeg"
+                alt="Article Image 3"
+                class="w-full h-full object-cover rounded-t-lg"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-md font-semibold mt-4 text-[#6B1E6F]">
+                Dr. Bhadra Bhandari Leads Women Wisdom Nepal for Social Change
+              </h3>
+              <p class="text-gray-700 text-sm mt-2">
+                Leading Nari Drishti Nepal, Dr. Bhandari empowers marginalized
+                women communities.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Hidden Articles (Article 4) -->
+        <div
+          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden"
+          id="article4"
+        >
+          <div class="border rounded-lg shadow-lg hover:shadow-2xl">
+            <div class="relative w-full h-[200px]">
+              <img
+                src="/assets/article4.jpeg"
+                alt="Article Image 4"
+                class="w-full h-full object-cover rounded-t-lg"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-md font-semibold mt-4 text-[#6B1E6F]">
+                Champions for Women's Rights and Inclusive Development
+              </h3>
+              <p class="text-gray-700 text-sm mt-2">
+                Dr. Bhandari fosters inclusive growth, focusing on women’s
+                rights and empowerment.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Article 5 -->
+        <div
+          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden"
+          id="article5"
+        >
+          <div class="border rounded-lg shadow-lg hover:shadow-2xl">
+            <div class="relative w-full h-[200px]">
+              <img
+                src="/assets/herosection2.jpeg"
+                alt="Article Image 5"
+                class="w-full h-full object-cover rounded-t-lg"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-md font-semibold mt-4 text-[#6B1E6F]">
+                Works to Elevate Women's Participation in Politics
+              </h3>
+              <p class="text-gray-700 text-sm mt-2">
+                She encourages women to engage in politics, influencing policy
+                decisions positively.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 6 -->
+        <div
+          class="article-content w-full sm:w-1/2 lg:w-1/4 transform transition-all duration-300 hidden"
+          id="article6"
+        >
+          <div class="border rounded-lg shadow-lg hover:shadow-2xl">
+            <div class="relative w-full h-[200px]">
+              <img
+                src="/assets/img2.jpeg"
+                alt="Article Image 6"
+                class="w-full h-full object-cover rounded-t-lg"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-md font-semibold mt-4 text-[#6B1E6F]">
+                Leadership Programs Focus on Women's Development
+              </h3>
+              <p class="text-gray-700 text-sm mt-2">
+                Her leadership programs strengthen women’s skills, providing
+                mentorship and empowerment.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-[#6B1E6F] text-white py-10">
+      <div class="container px-6 mx-auto">
+        <div
+          class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 mb-8"
+        >
+          <!-- Brand Section -->
+          <div class="flex-1 text-2xl font-bold text-center lg:text-left">
+            <h2 class="text-[32px]">Dr. Bhadra Bhandari</h2>
+            <p class="font-thin text-sm mt-1">Chairman at Women Wisdom Nepal</p>
+            <p class="mt-6 text-sm font-normal max-w-xs lg:max-w-sm">
+              Working at Lions Clubs Nepal since the last 24 years, and also
+              former Director at Capital FM.
+            </p>
+          </div>
+
+          <!-- Social Icons Section -->
+          <div
+            class="flex-1 flex justify-center lg:justify-end items-center space-x-4"
+          >
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md"
+            >
+              <img
+                src="./assets/facebook.svg"
+                alt="Facebook"
+                class="w-8 h-8 invert"
+              />
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md"
+            >
+              <img
+                src="./assets/insta.svg"
+                alt="Instagram"
+                class="w-8 h-8 invert"
+              />
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md"
+            >
+              <img
+                src="./assets/linkedin.svg"
+                alt="LinkedIn"
+                class="w-8 h-8 invert"
+              />
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md"
+            >
+              <img
+                src="./assets/twitter.png"
+                alt="Twitter"
+                class="w-8 h-8 invert"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Separator Line -->
+        <hr class="border-white/20 my-4 mt-20" />
+
+        <!-- Footer Bottom Section -->
+        <div
+          class="flex justify-between items-center text-sm gap-2 max-md:flex-col max-md:gap-4 mt-5"
+        >
+          <!-- Copyright -->
+          <div
+            class="text-center font-thin tracking-wider text-sm max-md:text-left"
+          >
+            &copy; 2025 Copyright. All rights reserved
+          </div>
+
+          <!-- Developed by -->
+          <div class="flex items-center gap-2 max-md:justify-center">
+            <span class="text-sm">Developed by:</span>
+            <img
+              src="./assets/kantipurwhite.svg"
+              class="w-[90px] inline-block"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@400;500;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+  /* overflow-x: hidden; */
+}
+
+body {
+  font-family: "Manrope";
+}
+p {
+  font-family: "Merriweather", sans-serif;
+}
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  z-index: 50;
+  font-size: 20px;
+}
+
+.mobile-menu.active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-menu a {
+  /* color: white; */
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobile-menu a:hover {
+  color: white;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 2s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slide-up 3s ease-out forwards;
+}
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(50, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.typing-smooth {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing-smooth 3s ease-in-out;
+}
+
+@keyframes typing-smooth {
+  0% {
+    width: 0;
+  }
+  10% {
+    width: 10;
+  }
+  25% {
+    width: 25%;
+  }
+  50% {
+    width: 50%;
+  }
+  75% {
+    width: 75%;
+  }
+  90% {
+    width: 90%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes pulseScale {
+  0%,
+  100% {
+    transform: scale(1);
+    background-color: white;
+  }
+  50% {
+    transform: scale(1.01);
+    background-color: white;
+  }
+}
+.animated-btn {
+  animation: pulseScale 0.8s ease-in-out infinite;
+}
+
+/* for about me section in landing page  */
+@keyframes fadeUpSignature {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 0.7;
+    transform: translateY(0);
+  }
+}
+
+.fade-up-signature {
+  animation: fadeUpSignature 3s ease-in-out forwards;
+}
+
+/* articel part css  */
+.article-content {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

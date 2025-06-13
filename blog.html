@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/bhadrabhnadari.png" type="image/png" />
+  <title>Dr.Bhadra Bhandari | Blogs</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <style>
+
+  </style>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+   <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</head>
+
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+<body>
+  <header
+    id="header"
+    class="flex  justify-between items-center px-[24px] lg:px-20 py-4 fixed w-full z-50 top-0  ">
+    <!-- Symbolizes trust, authority, and professionalism. Very common in government and diplomatic websites. -->
+    <h1 class="text-2xl md:text-3xl tracking-tight leading-tight cursor-pointer "
+      onclick="window.location.href='index.html'">
+      <span class="bg-clip-text font-medium text-[#B33791] ">
+        Dr. Bhadra Bhandari
+      </span>
+
+    </h1>
+    <nav class="flex gap-8 text-[15px] max-lg:gap-6 max-lg:hidden ">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="news.html">News</a>
+      <a href="blog.html" class="text-[#B33791] font-semibold">blog</a>
+      <a href="videos.html">Videos</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="hamburger lg:hidden text-[22px]" id="hamburger">&#9776;</button>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu border-y-2" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html" >About</a>
+      <a href="news.html">News</a>
+      <a href="blog.html" class="text-[#B33791]">blog</a>
+      <a href="videos.html">Videos</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+    
+
+<!-- Hero Section -->
+<section class="bg-[#F3F4F6] py-16 px-6 md:px-12 lg:px-20 text-center mt-[80px]">
+  <h2 class="text-3xl sm:text-4xl font-bold text-[#6B1E6F] mb-4">Latest Blogs & Insights</h2>
+  <p class="text-lg text-gray-600 mb-6">
+    Explore thought-provoking blogs about Dr. Bhadra Bhandari’s journey in politics, social activism, and business. Discover her perspectives, impactful stories, and the latest updates from her dynamic career.
+  </p>
+</section>
+
+
+<main class="my-10 pt-[120px] md:pt-[100px] lg:pt-[80px] pb-16 min-h-screen ">
+  <div class="w-full max-w-6xl mx-auto px-3">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <!-- BLOG CARD 1 -->
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
+        <img src="/assets/blog1.avif" alt="Breaking Barriers in Politics" class="w-full h-60 object-cover object-center">
+        <div class="p-6 flex flex-col flex-1">
+          <h2 class="text-xl md:text-2xl font-semibold mb-1 text-[#6B1E6F]">Breaking Barriers in Politics</h2>
+          <p class="text-sm text-gray-500 mb-2">Leave a Comment / <span>February 15, 2021</span></p>
+          <p class="text-gray-700 text-[15px] mb-4">How women leaders like Dr. Bhadra Bhandari are reshaping Nepal’s political discourse...</p>
+          <button onclick="openBlog(0)" class="text-[#B33791] text-left hover:underline text-[15px] mt-auto">Read More »</button>
+        </div>
+      </div>
+      <!-- BLOG CARD 2 -->
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
+        <img src="/assets/blog2.jpeg" alt="Empowering Rural Nepal" class="w-full h-60 object-cover object-center">
+        <div class="p-6 flex flex-col flex-1">
+          <h2 class="text-xl md:text-2xl font-semibold mb-1 text-[#6B1E6F]">Empowering Rural Nepal</h2>
+          <p class="text-sm text-gray-500 mb-2">Leave a Comment / <span>January 05, 2023</span></p>
+          <p class="text-gray-700 text-[15px] mb-4">The importance of local development, education, and healthcare in transforming lives...</p>
+          <button onclick="openBlog(1)" class="text-[#B33791] text-left  hover:underline text-[15px] mt-auto">Read More »</button>
+        </div>
+      </div>
+      <!-- BLOG CARD 3 -->
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
+        <img src="/assets/blog3.jpg" alt="A Voice at the Global Stage" class="w-full h-60 object-cover object-center">
+        <div class="p-6 flex flex-col flex-1">
+          <h2 class="text-xl md:text-2xl font-semibold mb-1 text-[#6B1E6F]">A Voice at the Global Stage</h2>
+          <p class="text-sm text-gray-500 mb-2">Leave a Comment / <span>June 23, 2024</span></p>
+          <p class="text-gray-700 text-[15px] mb-4">From the UN to regional summits — Dr. Bhandari’s diplomatic presence continues to grow...</p>
+          <button onclick="openBlog(2)" class="text-[#B33791] text-left  hover:underline text-[15px] mt-auto">Read More »</button>
+        </div>
+      </div>
+      <!-- BLOG CARD 4 -->
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
+        <img src="/assets/img2.jpeg" alt="Championing Women's Rights" class="w-full h-60 object-cover object-center">
+        <div class="p-6 flex flex-col flex-1">
+          <h2 class="text-xl md:text-2xl font-semibold mb-1 text-[#6B1E6F]">Championing Women's Rights</h2>
+          <p class="text-sm text-gray-500 mb-2">Leave a Comment / <span>March 12, 2023</span></p>
+          <p class="text-gray-700 text-[15px] mb-4">Dr. Bhandari’s work to create equal opportunities for women across Nepal is a model for the region...</p>
+          <button onclick="openBlog(3)" class="text-[#B33791] text-left  hover:underline text-[15px] mt-auto">Read More »</button>
+        </div>
+      </div>
+      <!-- BLOG CARD 5 -->
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
+        <img src="/assets/img11.jpeg" alt="Leadership in Action" class="w-full h-60 object-cover object-center">
+        <div class="p-6 flex flex-col flex-1">
+          <h2 class="text-xl md:text-2xl font-semibold mb-1 text-[#6B1E6F]">Leadership in Action</h2>
+          <p class="text-sm text-gray-500 mb-2">Leave a Comment / <span>April 18, 2024</span></p>
+          <p class="text-gray-700 text-[15px] mb-4">From parliament to grassroots campaigns, Dr. Bhandari demonstrates the power of practical leadership...</p>
+          <button onclick="openBlog(4)" class="text-[#B33791] text-left  hover:underline text-[15px] mt-auto">Read More »</button>
+        </div>
+      </div>
+      <!-- BLOG CARD 6 -->
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
+        <img src="/assets/img4.jpeg" alt="Inspiring the Next Generation" class="w-full h-60 object-cover object-center">
+        <div class="p-6 flex flex-col flex-1">
+          <h2 class="text-xl md:text-2xl font-semibold mb-1 text-[#6B1E6F]">Inspiring the Next Generation</h2>
+          <p class="text-sm text-gray-500 mb-2">Leave a Comment / <span>May 10, 2024</span></p>
+          <p class="text-gray-700 text-[15px] mb-4">How Dr. Bhandari is mentoring and motivating Nepal's youth to lead and serve with integrity...</p>
+          <button onclick="openBlog(5)" class="text-[#B33791] text-left hover:underline text-[15px] mt-auto">Read More »</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BLOG MODAL OVERLAY -->
+  <div id="blogModal" class="fixed inset-0 z-[999] flex items-center justify-center bg-black bg-opacity-70 hidden">
+    <div class="bg-white rounded-xl max-w-2xl w-[95vw] mx-2 p-8 relative animate-fade-in-up max-h-[90vh] overflow-y-auto">
+      <button onclick="closeBlog()" class="absolute top-2 right-3 text-gray-500 text-2xl hover:text-[#B33791]">&times;</button>
+      <!-- Blog content will be injected here -->
+      <div id="blogContent"></div>
+    </div>
+  </div>
+</main>
+
+
+
+
+    <!-- footer -->
+    <footer class="bg-[#6B1E6F] text-white py-10">
+      <div class="container px-6 mx-auto">
+        <div
+          class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 mb-8"
+        >
+          <!-- Brand Section -->
+          <div class="flex-1 text-2xl font-bold text-center lg:text-left">
+            <h2 class="text-[32px]">Dr. Bhadra Bhandari</h2>
+            <p class="font-thin text-sm mt-1">Chairman at Women Wisdom Nepal</p>
+            <p class="mt-6 text-sm font-normal max-w-xs lg:max-w-sm">
+              Working at Lions Clubs Nepal since the last 24 years, and also
+              former Director at Capital FM.
+            </p>
+          </div>
+
+          <!-- Social Icons Section -->
+          <div
+            class="flex-1 flex justify-center lg:justify-end items-center space-x-4"
+          >
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md"
+            >
+              <img
+                src="./assets/facebook.svg"
+                alt="Facebook"
+                class="w-8 h-8 invert"
+              />
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md"
+            >
+              <img
+                src="./assets/insta.svg"
+                alt="Instagram"
+                class="w-8 h-8 invert"
+              />
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md"
+            >
+              <img
+                src="./assets/linkedin.svg"
+                alt="LinkedIn"
+                class="w-8 h-8 invert"
+              />
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md"
+            >
+              <img
+                src="./assets/twitter.png"
+                alt="Twitter"
+                class="w-8 h-8 invert"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- Separator Line -->
+        <hr class="border-white/20 my-4 mt-20" />
+
+        <!-- Footer Bottom Section -->
+        <div
+          class="flex justify-between items-center text-sm gap-2 max-md:flex-col max-md:gap-4 mt-5"
+        >
+          <!-- Copyright -->
+          <div
+            class="text-center font-thin tracking-wider text-sm max-md:text-left"
+          >
+            &copy; 2025 Copyright. All rights reserved
+          </div>
+
+          <!-- Developed by -->
+          <div class="flex items-center gap-2 max-md:justify-center">
+            <span class="text-sm">Developed by:</span>
+            <img
+              src="./assets/kantipurwhite.svg"
+              class="w-[90px] inline-block"
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<script src="/js/blog.js"></script>
+</body>
+</html>
