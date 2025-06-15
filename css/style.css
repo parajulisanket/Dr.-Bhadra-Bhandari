@@ -17,6 +17,7 @@ body {
 p {
   font-family: "Merriweather", sans-serif;
 }
+
 .mobile-menu {
   position: absolute;
   top: 100%;
@@ -157,18 +158,4 @@ p {
 
 .fade-up-signature {
   animation: fadeUpSignature 3s ease-in-out forwards;
-}
-
-/* articel part css  */
-.article-content {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.article-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }

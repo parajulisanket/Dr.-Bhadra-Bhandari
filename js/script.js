@@ -151,86 +151,23 @@ function closeModal() {
   modal.classList.add("hidden");
 }
 
-window.addEventListener("DOMContentLoaded", function () {
-  const articles = document.querySelectorAll(".article-content");
-  const moveLeft = document.getElementById("moveLeft");
-  const moveRight = document.getElementById("moveRight");
-  let currentIndex = 1; // Start with the second article in the center
-
-  function updateArticles() {
-    articles.forEach((article, index) => {
-      article.classList.remove(
-        "transition-all",
-        "border-4",
-        "border-[#B33791]",
-        "shadow-xl",
-        "hidden"
-      );
-
-      // Show the current, previous, and next articles
-      if (
-        index === currentIndex ||
-        index === currentIndex - 1 ||
-        index === currentIndex + 1
-      ) {
-        article.classList.add("transition-all");
-        article.classList.remove("hidden");
-        // Optional: Add a highlight to the center article
-        if (index === currentIndex) {
-          article.classList.add("shadow-xl");
-        }
-      } else {
-        article.classList.add("hidden");
-      }
-    });
-  }
-
-  moveRight.addEventListener("click", () => {
-    if (currentIndex < articles.length - 1) {
-      currentIndex++;
-    } else {
-      currentIndex = 0;
-    }
-    updateArticles();
-  });
-
-  moveLeft.addEventListener("click", () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-    } else {
-      currentIndex = articles.length - 1;
-    }
-    updateArticles();
-  });
-
-  updateArticles();
-});
-
 // Get the "Back to Top" button
 const backToTopButton = document.getElementById("backToTop");
-
-// Function to show or hide the "Back to Top" button
 window.addEventListener("scroll", () => {
   if (window.scrollY > 200) {
-    // Show button when scrolled down by 200px
     backToTopButton.style.display = "block";
   } else {
     backToTopButton.style.display = "none";
   }
 });
-
-// Scroll to top functionality
 backToTopButton.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 // scroll down
 const scrollDownButton = document.querySelector('a[href="#experience"]');
-
-// Add smooth scrolling behavior
 scrollDownButton.addEventListener("click", function (event) {
   event.preventDefault();
-
   document.getElementById("experience").scrollIntoView({
     behavior: "smooth",
   });
