@@ -1,179 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/bhadrabhnadari.png" type="image/png" />
+    <title>Dr. Bhadra Bhandari | News</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./assets/bhadrabhnadari.png" type="image/png" />
-  <title>Dr. Bhadra Bhandari | News</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-  <style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  </head>
 
-  </style>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-  <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
-</head>
+  <body>
+    <header
+      id="header"
+      class="flex justify-between items-center px-[24px] lg:px-20 py-4 fixed w-full z-50 top-0"
+    >
+      <!-- Symbolizes trust, authority, and professionalism. Very common in government and diplomatic websites. -->
+      <h1
+        class="text-2xl md:text-3xl tracking-tight leading-tight cursor-pointer"
+        onclick="window.location.href='index.html'"
+      >
+        <span class="bg-clip-text font-medium text-[#B33791]"
+          >Dr. Bhadra Bhandari</span
+        >
+      </h1>
+      <nav class="flex gap-8 text-[15px] max-lg:gap-6 max-lg:hidden">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="news.html" class="text-[#B33791] font-semibold">News</a>
+        <a href="blog.html">blog</a>
+        <a href="videos.html">Videos</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="hamburger lg:hidden text-[22px]" id="hamburger">
+        &#9776;
+      </button>
 
-<script src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <!-- Mobile Menu -->
+      <nav class="mobile-menu border-y-2" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="news.html" class="text-[#B33791] font-semibold">News</a>
+        <a href="blog.html">blog</a>
+        <a href="videos.html">Videos</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-<body>
-  <header id="header" class="flex justify-between items-center px-[24px] lg:px-20 py-4 fixed w-full z-50 top-0">
-    <!-- Symbolizes trust, authority, and professionalism. Very common in government and diplomatic websites. -->
-    <h1 class="text-2xl md:text-3xl tracking-tight leading-tight cursor-pointer" onclick="window.location.href='index.html'">
-      <span class="bg-clip-text font-medium text-[#B33791]">Dr. Bhadra Bhandari</span>
-    </h1>
-    <nav class="flex gap-8 text-[15px] max-lg:gap-6 max-lg:hidden">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="news.html" class="text-[#B33791] font-semibold">News</a>
-      <a href="blog.html">blog</a>
-      <a href="videos.html">Videos</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button class="hamburger lg:hidden text-[22px]" id="hamburger">&#9776;</button>
+    <!-- Hero Section -->
+    <section
+      class="bg-[#F3F4F6] py-16 px-6 md:px-12 lg:px-20 text-center mt-[80px]"
+    >
+      <h2 class="text-3xl sm:text-4xl font-bold text-[#6B1E6F] mb-4">
+        Latest News & Updates
+      </h2>
+      <p class="text-lg text-gray-600 mb-6">
+        Stay updated with the latest news about Dr. Bhadra Bhandari’s
+        contributions to society, her leadership, and more.
+      </p>
+    </section>
 
-    <!-- Mobile Menu -->
-    <nav class="mobile-menu border-y-2" id="mobileMenu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="news.html" class="text-[#B33791] font-semibold">News</a>
-      <a href="blog.html">blog</a>
-      <a href="videos.html">Videos</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="bg-[#F3F4F6] py-16 px-6 md:px-12 lg:px-20 text-center mt-[80px]">
-    <h2 class="text-3xl sm:text-4xl font-bold text-[#6B1E6F] mb-4">Latest News & Updates</h2>
-    <p class="text-lg text-gray-600 mb-6">Stay updated with the latest news about Dr. Bhadra Bhandari’s contributions to society, her leadership, and more.</p>
-  </section>
-
-  <!-- News Section -->
-  <section class="py-16 px-6 md:px-12 lg:px-20 my-10">
-    <div class="max-w-7xl mx-auto">
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-        <!-- News Card 1 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:scale-105">
-          <img src="assets/news1.jpeg" alt="News 1" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-[#6B1E6F] mb-3">Dr. Bhandari Addresses National Assembly</h3>
-            <p class="text-gray-700 text-sm mb-4 text-justify">Focused on inclusive growth and rural development, Dr. Bhandari calls for systemic changes in the national policy.</p>
-            <a href="news-detail.html" class="text-[#B33791] font-medium hover:underline">Read More →</a>
+    <!-- News Section -->
+    <section class="py-16 px-6 md:px-12 lg:px-20 my-10">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+          <!-- News Card 1 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:scale-105"
+          >
+            <img
+              src="assets/news1.jpeg"
+              alt="News 1"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-[#6B1E6F] mb-3">
+                Dr. Bhandari Addresses National Assembly
+              </h3>
+              <p class="text-gray-700 text-sm mb-4 text-justify">
+                Focused on inclusive growth and rural development, Dr. Bhandari
+                calls for systemic changes in the national policy.
+              </p>
+              <a
+                href="news-detail.html"
+                class="text-[#B33791] font-medium hover:underline"
+                >Read More →</a
+              >
+            </div>
           </div>
-        </div>
 
-        <!-- News Card 2 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:scale-105">
-          <img src="assets/news2.jpeg" alt="News 2" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-[#6B1E6F] mb-3">Women Empowerment Conference 2024</h3>
-            <p class="text-gray-700 text-sm mb-4 text-justify">Dr. Bhandari emphasizes the need for stronger representation of women in leadership roles across Nepal.</p>
-            <a href="news-detail.html" class="text-[#B33791] font-medium hover:underline">Read More →</a>
+          <!-- News Card 2 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:scale-105"
+          >
+            <img
+              src="assets/news2.jpeg"
+              alt="News 2"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-[#6B1E6F] mb-3">
+                Women Empowerment Conference 2024
+              </h3>
+              <p class="text-gray-700 text-sm mb-4 text-justify">
+                Dr. Bhandari emphasizes the need for stronger representation of
+                women in leadership roles across Nepal.
+              </p>
+              <a
+                href="news-detail.html"
+                class="text-[#B33791] font-medium hover:underline"
+                >Read More →</a
+              >
+            </div>
           </div>
-        </div>
 
-        <!-- News Card 3 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:scale-105">
-          <img src="assets/news3.jpeg" alt="News 3" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-[#6B1E6F] mb-3">Visit to Rural Education Centers</h3>
-            <p class="text-gray-700 text-sm mb-4 text-justify">Highlighting the importance of education equity, Dr. Bhandari works with rural education centers to improve access.</p>
-            <a href="news-detail.html" class="text-[#B33791] font-medium hover:underline">Read More →</a>
+          <!-- News Card 3 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:scale-105"
+          >
+            <img
+              src="assets/news3.jpeg"
+              alt="News 3"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-[#6B1E6F] mb-3">
+                Visit to Rural Education Centers
+              </h3>
+              <p class="text-gray-700 text-sm mb-4 text-justify">
+                Highlighting the importance of education equity, Dr. Bhandari
+                works with rural education centers to improve access.
+              </p>
+              <a
+                href="news-detail.html"
+                class="text-[#B33791] font-medium hover:underline"
+                >Read More →</a
+              >
+            </div>
           </div>
-        </div>
 
-        <!-- News Card 4 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:scale-105">
-          <img src="assets/news4.jpeg" alt="News 4" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-[#6B1E6F] mb-3">Healthcare Reform Plans Introduced</h3>
-            <p class="text-gray-700 text-sm mb-4 text-justify">Introducing accessible healthcare for all districts. Dr. Bhandari pushes for policy changes in the healthcare sector.</p>
-            <a href="news-detail.html" class="text-[#B33791] font-medium hover:underline">Read More →</a>
+          <!-- News Card 4 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:scale-105"
+          >
+            <img
+              src="assets/news4.jpeg"
+              alt="News 4"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-[#6B1E6F] mb-3">
+                Healthcare Reform Plans Introduced
+              </h3>
+              <p class="text-gray-700 text-sm mb-4 text-justify">
+                Introducing accessible healthcare for all districts. Dr.
+                Bhandari pushes for policy changes in the healthcare sector.
+              </p>
+              <a
+                href="news-detail.html"
+                class="text-[#B33791] font-medium hover:underline"
+                >Read More →</a
+              >
+            </div>
           </div>
-        </div>
 
-        <!-- News Card 5 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:scale-105">
-          <img src="assets/news5.jpeg" alt="News 5" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-[#6B1E6F] mb-3">UN Assembly Speech</h3>
-            <p class="text-gray-700 text-sm mb-4 text-justify">Dr. Bhandari delivers a powerful speech at the United Nations emphasizing sustainable development goals.</p>
-            <a href="news-detail.html" class="text-[#B33791] font-medium hover:underline">Read More →</a>
+          <!-- News Card 5 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:scale-105"
+          >
+            <img
+              src="assets/news5.jpeg"
+              alt="News 5"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-[#6B1E6F] mb-3">
+                UN Assembly Speech
+              </h3>
+              <p class="text-gray-700 text-sm mb-4 text-justify">
+                Dr. Bhandari delivers a powerful speech at the United Nations
+                emphasizing sustainable development goals.
+              </p>
+              <a
+                href="news-detail.html"
+                class="text-[#B33791] font-medium hover:underline"
+                >Read More →</a
+              >
+            </div>
           </div>
-        </div>
 
-        <!-- News Card 6 -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:scale-105">
-          <img src="assets/news6.jpeg" alt="News 6" class="w-full h-48 object-cover">
-          <div class="p-6">
-            <h3 class="text-xl font-semibold text-[#6B1E6F] mb-3">Community Outreach Program Launched</h3>
-            <p class="text-gray-700 text-sm mb-4 text-justify">New social initiative launched to benefit remote villages. Dr. Bhandari highlights the importance of community-driven growth.</p>
-            <a href="news-detail.html" class="text-[#B33791] font-medium hover:underline">Read More →</a>
+          <!-- News Card 6 -->
+          <div
+            class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:scale-105"
+          >
+            <img
+              src="assets/news6.jpeg"
+              alt="News 6"
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-semibold text-[#6B1E6F] mb-3">
+                Community Outreach Program Launched
+              </h3>
+              <p class="text-gray-700 text-sm mb-4 text-justify">
+                New social initiative launched to benefit remote villages. Dr.
+                Bhandari highlights the importance of community-driven growth.
+              </p>
+              <a
+                href="news-detail.html"
+                class="text-[#B33791] font-medium hover:underline"
+                >Read More →</a
+              >
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="bg-[#6B1E6F] text-white py-10">
-    <div class="container px-6 mx-auto">
-      <div class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 mb-8">
-        <!-- Brand Section -->
-        <div class="flex-1 text-2xl font-bold text-center lg:text-left">
-          <h2 class="text-[32px]">Dr. Bhadra Bhandari</h2>
-          <p class="font-thin text-sm mt-1">Chairman at Women Wisdom Nepal</p>
-          <p class="mt-6 text-sm font-normal max-w-xs lg:max-w-sm">
-            Working at Lions Clubs Nepal since the last 24 years, and also former Director at Capital FM.
-          </p>
+    <!-- Footer -->
+    <footer class="bg-[#6B1E6F] text-white py-10">
+      <div class="container px-6 mx-auto">
+        <div
+          class="flex flex-col lg:flex-row items-center lg:items-start justify-between gap-8 mb-8"
+        >
+          <!-- Brand Section -->
+          <div class="flex-1 text-2xl font-bold text-center lg:text-left">
+            <h2 class="text-[32px]">Dr. Bhadra Bhandari</h2>
+            <p class="font-thin text-sm mt-1">Chairman at Women Wisdom Nepal</p>
+            <p
+              class="mt-6 text-sm font-thin max-w-xs lg:max-w-sm border-b w-fit"
+            >
+              bhadrabhandari83@gmail.com
+            </p>
+          </div>
+
+          <!-- Social Icons Section -->
+          <div
+            class="flex-1 flex justify-center lg:justify-end items-center space-x-4"
+          >
+            <a
+              href="#"
+              aria-label="Facebook"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md"
+            >
+              <img
+                src="./assets/facebook.svg"
+                alt="Facebook"
+                class="w-8 h-8 invert"
+              />
+            </a>
+            <a
+              href="#"
+              aria-label="Instagram"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md"
+            >
+              <img
+                src="./assets/insta.svg"
+                alt="Instagram"
+                class="w-8 h-8 invert"
+              />
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md"
+            >
+              <img
+                src="./assets/linkedin.svg"
+                alt="LinkedIn"
+                class="w-8 h-8 invert"
+              />
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              class="hover:opacity-75 transition-opacity p-2 rounded-md"
+            >
+              <img
+                src="./assets/twitter.png"
+                alt="Twitter"
+                class="w-8 h-8 invert"
+              />
+            </a>
+          </div>
         </div>
 
-        <!-- Social Icons Section -->
-        <div class="flex-1 flex justify-center lg:justify-end items-center space-x-4">
-          <a href="#" aria-label="Facebook" class="hover:opacity-75 transition-opacity p-2 rounded-md">
-            <img src="./assets/facebook.svg" alt="Facebook" class="w-8 h-8 invert" />
-          </a>
-          <a href="#" aria-label="Instagram" class="hover:opacity-75 transition-opacity p-2 rounded-md">
-            <img src="./assets/insta.svg" alt="Instagram" class="w-8 h-8 invert" />
-          </a>
-          <a href="#" target="_blank" class="hover:opacity-75 transition-opacity p-2 rounded-md">
-            <img src="./assets/linkedin.svg" alt="LinkedIn" class="w-8 h-8 invert" />
-          </a>
-          <a href="#" target="_blank" class="hover:opacity-75 transition-opacity p-2 rounded-md">
-            <img src="./assets/twitter.png" alt="Twitter" class="w-8 h-8 invert" />
-          </a>
+        <!-- Separator Line -->
+        <hr class="border-white/20 my-4 mt-20" />
+
+        <!-- Footer Bottom Section -->
+        <div
+          class="flex justify-between items-center text-sm gap-2 max-md:flex-col max-md:gap-4 mt-5"
+        >
+          <!-- Copyright -->
+          <div
+            class="text-center font-thin tracking-wider text-sm max-md:text-left"
+          >
+            &copy; 2025 Copyright. All rights reserved
+          </div>
+
+          <!-- Developed by -->
+          <div class="flex items-center gap-2 max-md:justify-center">
+            <span class="text-sm">Developed by:</span>
+            <img
+              src="./assets/kantipurwhite.svg"
+              class="w-[90px] inline-block"
+            />
+          </div>
         </div>
       </div>
-
-      <!-- Separator Line -->
-      <hr class="border-white/20 my-4 mt-20" />
-
-      <!-- Footer Bottom Section -->
-      <div class="flex justify-between items-center text-sm gap-2 max-md:flex-col max-md:gap-4 mt-5">
-        <!-- Copyright -->
-        <div class="text-center font-thin tracking-wider text-sm max-md:text-left">
-          &copy; 2025 Copyright. All rights reserved
-        </div>
-
-        <!-- Developed by -->
-        <div class="flex items-center gap-2 max-md:justify-center">
-          <span class="text-sm">Developed by:</span>
-          <img src="./assets/kantipurwhite.svg" class="w-[90px] inline-block" />
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
