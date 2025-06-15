@@ -49,16 +49,24 @@
     </nav>
     <button class="hamburger lg:hidden text-[22px]" id="hamburger">&#9776;</button>
 
-    <!-- Mobile Menu -->
-    <nav class="mobile-menu border-y-2" id="mobileMenu">
-      <a href="index.html">Home</a>
-      <a href="about.html" >About</a>
-      <a href="news.html">News</a>
-      <a href="blog.html" class="text-[#B33791] font-semibold">blog</a>
-      <a href="videos.html">Videos</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+       <!-- Mobile Menu -->
+      <nav class="mobile-menu border-y-2" id="mobileMenu">
+        <!-- Close Button -->
+        <button
+          class="close-btn"
+          onclick="document.getElementById('mobileMenu').classList.remove('active')"
+        >
+          &times;
+        </button>
+
+        <a href="index.html" >Home</a>
+        <a href="about.html">About</a>
+        <a href="news.html">News</a>
+        <a href="blog.html" class="active-link font-semibold">Blog</a>
+        <a href="videos.html">Videos</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
   </header>
     
 

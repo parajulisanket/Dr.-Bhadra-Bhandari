@@ -73,10 +73,18 @@
 
       <!-- Mobile Menu -->
       <nav class="mobile-menu border-y-2" id="mobileMenu">
-        <a href="#" class="text-[#B33791] font-semibold">Home</a>
+        <!-- Close Button -->
+        <button
+          class="close-btn"
+          onclick="document.getElementById('mobileMenu').classList.remove('active')"
+        >
+          &times;
+        </button>
+
+        <a href="#" class="active-link font-semibold">Home</a>
         <a href="about.html">About</a>
         <a href="news.html">News</a>
-        <a href="blog.html">blog</a>
+        <a href="blog.html">Blog</a>
         <a href="videos.html">Videos</a>
         <a href="gallery.html">Gallery</a>
         <a href="contact.html">Contact</a>

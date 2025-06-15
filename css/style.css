@@ -19,40 +19,74 @@ p {
 }
 
 .mobile-menu {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 100%;
-  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  padding: 1rem;
-  gap: 1rem;
+  align-items: center;
+  /* top padding leaves room for logo/nav */
+  padding-top: 5.5rem;
+  padding-bottom: 2rem;
+  gap: 2rem;
+  z-index: 50;
+  font-size: 1.4rem;
   transform: translateX(100%);
   opacity: 0;
-  transition: all 0.3s ease-in-out;
   pointer-events: none;
-  z-index: 50;
-  font-size: 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Active state: menu slides in */
 .mobile-menu.active {
-  transform: translateY(0);
+  transform: translateX(0);
   opacity: 1;
   pointer-events: auto;
 }
 
-.mobile-menu a {
-  /* color: white; */
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  transition: color 0.2s ease;
+/* Close button */
+.mobile-menu .close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 2.2rem;
+  color: #b33791;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 60;
+  transition: color 0.2s;
+}
+.mobile-menu .close-btn:hover {
+  color: #6b1e6f;
 }
 
+/* Menu links */
+.mobile-menu a {
+  color: #181818;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  font-size: 1.15em;
+  display: block;
+  text-align: center;
+}
+
+.mobile-menu a.active,
 .mobile-menu a:hover {
-  color: white;
+  background: #f4e6fa;
+  color: #b33791;
+}
+
+.mobile-menu a.active-link {
+  color: #b33791 !important;
+  font-weight: 600;
 }
 
 @keyframes fade-in {
