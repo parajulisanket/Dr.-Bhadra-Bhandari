@@ -58,7 +58,10 @@
           Dr. Bhadra Bhandari
         </span>
       </h1>
-      <nav class="text-white flex gap-8 text-[15px] max-lg:gap-6 max-lg:hidden">
+      <nav
+        id="white-header-page"
+        class="text-white flex gap-8 text-[15px] max-lg:gap-6 max-lg:hidden"
+      >
         <a href="#" id="active" class="text-[#B33791] font-semibold">Home</a>
         <a href="about.html">About</a>
         <a href="news.html">News</a>
@@ -90,125 +93,137 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-    <!-- hero section -->
     <section
-      class="relative min-h-screen flex items-center justify-center bg-gray-900 overflow-hidden"
+      class="bg-gradient-to-br from-[#F7F0FA] via-[#F7F8FC] to-[#E9F3F9] relative min-h-screen flex flex-col md:flex-row items-center overflow-hidden px-4"
     >
-      <!-- Background Images (fading crossfade) -->
-      <div id="hero-bg-rotator" class="absolute inset-0 w-full h-full z-0">
+      <!-- Mobile: Image at top, visible only on mobile -->
+      <div class="block md:hidden w-full relative h-64 mt-20">
         <img
           src="./assets/landing1copy.jpeg"
-          class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100"
+          class="mobile-hero-img absolute left-1/2 top-0 -translate-x-1/2 w-11/12 h-64 object-cover rounded-2xl shadow-lg transition-opacity duration-1000 opacity-100"
           style="opacity: 1"
         />
         <img
           src="./assets/landing2copy.jpeg"
-          class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+          class="mobile-hero-img absolute left-1/2 top-0 -translate-x-1/2 w-11/12 h-64 object-cover rounded-2xl shadow-lg transition-opacity duration-1000 opacity-0"
           style="opacity: 0"
         />
         <img
           src="./assets/landing3.jpeg"
-          class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+          class="mobile-hero-img absolute left-1/2 top-0 -translate-x-1/2 w-11/12 h-64 object-cover rounded-2xl shadow-lg transition-opacity duration-1000 opacity-0"
           style="opacity: 0"
         />
         <img
           src="./assets/landing4.jpeg"
-          class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+          class="mobile-hero-img absolute left-1/2 top-0 -translate-x-1/2 w-11/12 h-64 object-cover rounded-2xl shadow-lg transition-opacity duration-1000 opacity-0"
           style="opacity: 0"
         />
-        <div
-          class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60"
-        ></div>
       </div>
-      <!-- overlay text part -->
+
+      <!-- Desktop: Fading Images as background, visible only on desktop -->
+      <div class="hidden md:block absolute right-0 top-0 h-full w-1/2 z-0">
+        <div id="hero-bg-rotator" class="relative h-full w-full">
+          <img
+            src="./assets/landing1copy.jpeg"
+            class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100"
+            style="opacity: 1"
+          />
+          <img
+            src="./assets/landing2copy.jpeg"
+            class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+            style="opacity: 0"
+          />
+          <img
+            src="./assets/landing3.jpeg"
+            class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+            style="opacity: 0"
+          />
+          <img
+            src="./assets/landing4.jpeg"
+            class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+            style="opacity: 0"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-l from-black/70 via-black/20 to-transparent"
+          ></div>
+        </div>
+      </div>
+
+      <!-- Content Area -->
       <div
-        class="relative z-10 flex flex-col items-center w-full max-w-2xl mx-auto text-center px-4 py-14 sm:py-16 mt-20"
+        class="relative z-10 flex flex-col justify-center items-start max-w-2xl w-full md:w-1/2 min-h-[75vh] px-4 py-10 md:py-0 mt-4 md:mt-0"
       >
-        <div class="relative z-10 flex flex-col items-center">
-          <!-- Gradient Animated Underline Heading -->
-          <h1
-            class="text-3xl sm:text-5xl font-extrabold mb-2 text-transparent bg-clip-text text-white drop-shadow-lg animate-fadein"
+        <h1
+          class="text-2xl sm:text-6xl font-extrabold mb-4 text-transparent bg-clip-text bg-[#7D8597] drop-shadow-lg"
+        >
+          Dr. Bhadra Bhandari
+        </h1>
+        <p
+          class="mb-3 text-base sm:text-lg text-[#6B1E6F] flex flex-wrap items-center gap-2 drop-shadow"
+        >
+          <span>Politician</span>
+          <span class="text-[#7D8597] font-bold text-lg">|</span>
+          <span>Social Activist</span>
+          <span class="text-[#7D8597] font-bold text-lg">|</span>
+          <span>Entrepreneur</span>
+          <span class="text-[#7D8597] font-bold text-lg">|</span>
+          <span>Sociologist</span>
+          <span class="text-[#7D8597] font-bold text-lg">|</span>
+          <span>Columnist</span>
+        </p>
+        <p
+          class="mb-8 text-gray-700 max-w-xl drop-shadow-lg text-lg font-medium tracking-wider text-justify"
+        >
+          Dedicated to empowering women, advancing gender equality, and
+          fostering sustainable community development through visionary
+          leadership, inclusive policy-making, and active social engagement.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-start"
+        >
+          <button
+            onclick="window.location.href='about.html'"
+            class="w-auto flex items-center gap-2 bg-[#6B1E6F] font-semibold text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#B33791]/50"
           >
-            Dr. Bhadra Bhandari
-          </h1>
-
-          <!-- Roles with Gradient Bars -->
-          <p
-            class="mb-3 text-base sm:text-lg font-semibold text-white flex flex-wrap justify-center gap-2 drop-shadow"
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 4v16m8-8H4"
+              />
+            </svg>
+            <span class="text-lg font-semibold">Learn More</span>
+          </button>
+          <button
+            onclick="window.location.href='contact.html'"
+            class="w-auto flex items-center gap-2 bg-white border-2 border-[#B33791] font-semibold text-[#B33791] px-6 py-3 rounded-xl shadow-lg hover:bg-[#B33791] hover:text-white hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#B33791]/50"
           >
-            <span class="px-2 py-0.5 rounded-full bg-[#B33791]/80"
-              >Politician</span
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
             >
-            <span class="px-2 py-0.5 rounded-full bg-[#7D8597]/80"
-              >Social Activist</span
-            >
-            <span class="px-2 py-0.5 rounded-full bg-[#B33791]/80"
-              >Entrepreneur</span
-            >
-            <span class="px-2 py-0.5 rounded-full bg-[#7D8597]/80"
-              >Sociologist</span
-            >
-            <span class="px-2 py-0.5 rounded-full bg-[#B33791]/80"
-              >Columnist</span
-            >
-          </p>
-
-          <!-- Subheading -->
-          <p
-            class="mb-8 text-white max-w-xl drop-shadow-lg text-lg font-medium tracking-wider sm:text-justify text-center"
-          >
-            Dedicated to empowering women, advancing gender equality, and
-            fostering sustainable community development through visionary
-            leadership, inclusive policy-making, and active social engagement
-
-            <!-- CTA Buttons with Glow Effect -->
-          </p>
-
-          <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
-            <button
-              onclick="window.location.href='about.html'"
-              class="flex items-center gap-2 bg-[#6B1E6F] font-semibold text-white px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#B33791]/50"
-            >
-              <svg
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 4v16m8-8H4"
-                />
-              </svg>
-              Learn More
-            </button>
-            <button
-              onclick="window.location.href='contact.html'"
-              class="flex item-center gap-2 bg-white border border-[#B33791] font-semibold text-[#B33791] px-8 py-3 rounded-xl shadow-lg hover:bg-[#B33791] hover:text-white hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#B33791]/50"
-            >
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21 8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2V8z"
-                />
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21 8l-9 6-9-6"
-                />
-              </svg>
-              Get in Touch
-            </button>
-          </div>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2V8z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8l-9 6-9-6"
+              />
+            </svg>
+            <span class="text-lg font-semibold">Get in Touch</span>
+          </button>
         </div>
       </div>
     </section>
@@ -219,7 +234,7 @@
     >
       <a
         href="#experience"
-        class="text-white text-sm animate-bounce duration-2000 flex flex-col items-center hover:text-gray-300"
+        class="text-gray-700 text-sm animate-bounce duration-2000 flex flex-col items-center hover:text-gray-500"
       >
         <span class="mb-1">Scroll Down</span>
         <i class="fa-solid fa-computer-mouse text-2xl"></i>
