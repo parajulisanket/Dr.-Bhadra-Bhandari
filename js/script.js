@@ -14,68 +14,54 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    breakpoints: {
-      640: {
-        slidesPerView: 1,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    },
-    loop: true,
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
+//JS for crossfade image rotation
+const images = document.querySelectorAll(".hero-bg-img");
+let idx = 0;
+setInterval(() => {
+  images[idx].style.opacity = 0;
+  idx = (idx + 1) % images.length;
+  images[idx].style.opacity = 1;
+  // Hide all others just in case
+  images.forEach((img, i) => {
+    if (i !== idx) img.style.opacity = 0;
   });
-});
+}, 4000);
 
-document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper(".mySwiper2", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    slidesPerView: 1,
-    loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    speed: 1200,
-    effect: "fade",
-  });
-});
-
+// for scrooling nav part
 window.addEventListener("scroll", function () {
   const header = document.getElementById("header");
+  const mobileMenu = document.getElementById("mobileMenu");
   const active = document.getElementById("active");
   const active2 = document.getElementById("active2");
+  const navLinks = header.querySelectorAll("a");
+
   if (window.scrollY > 110) {
     header.style.backgroundColor = "white";
-    mobileMenu.style.backgroundColor = "white";
     header.style.color = "black";
-    active.style.color = "black";
-    active2.style.color = "black";
+    if (mobileMenu) mobileMenu.style.backgroundColor = "white";
+    navLinks.forEach((link) => {
+      // Active links active, others black
+      if (link === active || link === active2) {
+        link.style.color = "#B33791";
+        link.style.fontWeight = "semibold";
+      } else {
+        link.style.color = "black";
+        link.style.fontWeight = "normal";
+      }
+    });
   } else {
     header.style.backgroundColor = "white";
-    mobileMenu.style.backgroundColor = "white";
     header.style.color = "black";
-    active2.style.color = "black";
-    active.style.color = "black";
+    if (mobileMenu) mobileMenu.style.backgroundColor = "white";
+    navLinks.forEach((link) => {
+      if (link === active || link === active2) {
+        link.style.color = "#B33791";
+        link.style.fontWeight = "semibold";
+      } else {
+        link.style.color = "black"; // or "white" if at top & header is transparent!
+        link.style.fontWeight = "normal";
+      }
+    });
   }
 });
 

@@ -47,7 +47,7 @@
 
     <header
       id="header"
-      class="flex justify-between items-center px-[24px] lg:px-20 py-4 fixed w-full z-50 top-0"
+      class="flex justify-between items-center px-[24px] lg:px-20 py-4 fixed w-full z-50 top-0 transition-all duration-300 bg-transparent"
     >
       <!-- Symbolizes trust, authority, and professionalism. Very common in government and diplomatic websites. -->
       <h1
@@ -58,8 +58,8 @@
           Dr. Bhadra Bhandari
         </span>
       </h1>
-      <nav class="flex gap-8 text-[15px] max-lg:gap-6 max-lg:hidden">
-        <a href="#" class="text-[#B33791] font-semibold">Home</a>
+      <nav class="text-white flex gap-8 text-[15px] max-lg:gap-6 max-lg:hidden">
+        <a href="#" id="active" class="text-[#B33791] font-semibold">Home</a>
         <a href="about.html">About</a>
         <a href="news.html">News</a>
         <a href="blog.html">blog</a>
@@ -90,51 +90,84 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-
-    <!-- Hero Section -->
+    <!-- hero section -->
     <section
-      id="hero"
-      class="mt-6 lg:-mt-6 min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-20 overflow-x-hidden"
+      class="relative min-h-screen flex items-center justify-center bg-gray-900 overflow-hidden"
     >
+      <!-- Background Images (fading crossfade) -->
+      <div id="hero-bg-rotator" class="absolute inset-0 w-full h-full z-0">
+        <img
+          src="./assets/landing1copy.jpeg"
+          class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100"
+          style="opacity: 1"
+        />
+        <img
+          src="./assets/landing2copy.jpeg"
+          class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+          style="opacity: 0"
+        />
+        <img
+          src="./assets/landing3.jpeg"
+          class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+          style="opacity: 0"
+        />
+        <img
+          src="./assets/landing4.jpeg"
+          class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+          style="opacity: 0"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/60"
+        ></div>
+      </div>
+      <!-- overlay text part -->
       <div
-        class="w-full max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+        class="relative z-10 flex flex-col items-center w-full max-w-2xl mx-auto text-center px-4 py-14 sm:py-16 mt-20"
       >
-        <!-- Hero Left Part -->
-        <div class="space-y-6 text-left order-2 lg:order-1">
-          <!-- Heading -->
-          <div class="space-y-3 mt-10">
-            <h1
-              class="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-800 leading-tight typing-effect"
-            >
-              <span
-                class="bg-gradient-to-r from-[#7D8597] via-[#7D8597] to-[#7D8597] bg-clip-text text-transparent"
-              >
-                Dr. Bhadra Bhandari
-              </span>
-            </h1>
+        <div class="relative z-10 flex flex-col items-center">
+          <!-- Gradient Animated Underline Heading -->
+          <h1
+            class="text-3xl sm:text-5xl font-extrabold mb-2 text-transparent bg-clip-text text-white drop-shadow-lg animate-fadein"
+          >
+            Dr. Bhadra Bhandari
+          </h1>
 
-            <!-- Subtitle -->
-            <p
-              class="text-base sm:text-lg md:text-xl text-gray-700 tracking-wide animate-slide-up"
+          <!-- Roles with Gradient Bars -->
+          <p
+            class="mb-3 text-base sm:text-lg font-semibold text-white flex flex-wrap justify-center gap-2 drop-shadow"
+          >
+            <span class="px-2 py-0.5 rounded-full bg-[#B33791]/80"
+              >Politician</span
             >
-              Politician
-              <span class="text-[#7D8597] font-medium">|</span> Social Activist
-              <span class="text-[#7D8597] font-medium">|</span> Entrepreneur
-              <span class="text-[#7D8597] font-medium">|</span> Sociologist
-              <span class="text-[#7D8597] font-medium">|</span> Columnist
-            </p>
-            <p class="my-2 text-gray-500 text-justify">
-              Dedicated to empowering women, advancing gender equality, and
-              fostering sustainable community development through visionary
-              leadership, inclusive policy-making, and active social engagement.
-            </p>
-          </div>
+            <span class="px-2 py-0.5 rounded-full bg-[#7D8597]/80"
+              >Social Activist</span
+            >
+            <span class="px-2 py-0.5 rounded-full bg-[#B33791]/80"
+              >Entrepreneur</span
+            >
+            <span class="px-2 py-0.5 rounded-full bg-[#7D8597]/80"
+              >Sociologist</span
+            >
+            <span class="px-2 py-0.5 rounded-full bg-[#B33791]/80"
+              >Columnist</span
+            >
+          </p>
 
-          <div class="flex flex-wrap gap-4">
-            <!-- Learn More -->
+          <!-- Subheading -->
+          <p
+            class="mb-8 text-white max-w-xl drop-shadow-lg text-lg font-medium tracking-wider sm:text-justify text-center"
+          >
+            Dedicated to empowering women, advancing gender equality, and
+            fostering sustainable community development through visionary
+            leadership, inclusive policy-making, and active social engagement
+
+            <!-- CTA Buttons with Glow Effect -->
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
             <button
               onclick="window.location.href='about.html'"
-              class="flex items-center gap-2 bg-white border border-[#B33791] text-[#B33791] hover:bg-[#B33791] hover:text-white font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+              class="flex items-center gap-2 bg-[#6B1E6F] font-semibold text-white px-8 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#B33791]/50"
             >
               <svg
                 class="w-5 h-5"
@@ -151,14 +184,12 @@
               </svg>
               Learn More
             </button>
-
-            <!-- Get in Touch -->
             <button
               onclick="window.location.href='contact.html'"
-              class="flex items-center gap-2 bg-[#6B1E6F] hover:bg-white text-white hover:text-[#6B1E6F] hover:border hover:border-[#6B1E6F] font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+              class="flex item-center gap-2 bg-white border border-[#B33791] font-semibold text-[#B33791] px-8 py-3 rounded-xl shadow-lg hover:bg-[#B33791] hover:text-white hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#B33791]/50"
             >
               <svg
-                class="w-5 h-5"
+                class="w-6 h-6"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
@@ -179,51 +210,6 @@
             </button>
           </div>
         </div>
-
-        <!-- Swiper Container -->
-        <div class="relative w-full order-1 lg:order-2 mt-10 lg:mt-0">
-          <!-- Gradient Background Behind Carousel -->
-
-          <!-- Swiper -->
-          <div
-            class="swiper mySwiper2 relative z-10 w-full max-w-2xl mx-auto rounded-2xl overflow-hidden h-[300px] sm:h-[360px] md:h-[420px] lg:h-[500px]"
-          >
-            <div class="swiper-wrapper">
-              <!-- Slide 1 -->
-              <div class="swiper-slide">
-                <img
-                  src="./assets/landing1.jpeg"
-                  alt="Image 1"
-                  class="w-full h-full object-cover rounded-2xl"
-                />
-              </div>
-              <!-- Slide 2 -->
-              <div class="swiper-slide">
-                <img
-                  src="./assets/landing2.jpeg"
-                  alt="Image 2"
-                  class="w-full h-full object-cover rounded-2xl"
-                />
-              </div>
-              <!-- Slide 3 -->
-              <div class="swiper-slide">
-                <img
-                  src="./assets/landing3.jpeg"
-                  alt="Image 3"
-                  class="w-full h-full object-cover rounded-2xl"
-                />
-              </div>
-              <!-- Slide 4 -->
-              <div class="swiper-slide">
-                <img
-                  src="./assets/landing4.jpeg"
-                  alt="Image 4"
-                  class="w-full h-full object-cover rounded-2xl"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -233,7 +219,7 @@
     >
       <a
         href="#experience"
-        class="text-gray-500 text-sm animate-bounce duration-2000 flex flex-col items-center hover:text-red-800"
+        class="text-white text-sm animate-bounce duration-2000 flex flex-col items-center hover:text-gray-300"
       >
         <span class="mb-1">Scroll Down</span>
         <i class="fa-solid fa-computer-mouse text-2xl"></i>
@@ -1001,7 +987,7 @@
               Chairman at Women Wisdom Nepal
             </p>
             <p
-              class="mt-6 text-sm font-thin max-w-xs lg:max-w-sm border-b w-fit"
+              class="mt-6 text-sm font-thin max-w-xs lg:max-w-sm border-b w-fit mx-auto sm:mx-0"
             >
               bhadrabhandari83@gmail.com
             </p>
