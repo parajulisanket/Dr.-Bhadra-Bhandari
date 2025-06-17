@@ -143,23 +143,20 @@
             class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
             style="opacity: 0"
           />
-          <div
-            class="absolute inset-0 bg-gradient-to-l from-black/70 via-black/20 to-transparent"
-          ></div>
         </div>
       </div>
 
       <!-- Content Area -->
       <div
-        class="relative z-10 flex flex-col justify-center items-start max-w-2xl w-full md:w-1/2 min-h-[75vh] px-4 py-10 md:py-0 mt-4 md:mt-0"
+        class="relative z-10 flex flex-col justify-center max-w-2xl w-full md:w-1/2 min-h-[75vh] px-4 md:px-0 md:pl-16 py-10 md:py-0 mt-4 md:mt-0 items-center text-center md:items-start md:text-left"
       >
         <h1
-          class="text-2xl sm:text-6xl font-extrabold mb-4 text-transparent bg-clip-text bg-[#7D8597] drop-shadow-lg"
+          class="text-3xl sm:text-6xl font-extrabold mb-4 text-transparent bg-clip-text bg-[#7D8597] drop-shadow-lg typing typing-smooth"
         >
           Dr. Bhadra Bhandari
         </h1>
         <p
-          class="mb-3 text-base sm:text-lg text-[#6B1E6F] flex flex-wrap items-center gap-2 drop-shadow"
+          class="mb-3 text-base sm:text-lg text-[#6B1E6F] flex flex-wrap items-center gap-2 drop-shadow animate-slide-up"
         >
           <span>Politician</span>
           <span class="text-[#7D8597] font-bold text-lg">|</span>
@@ -183,7 +180,7 @@
         >
           <button
             onclick="window.location.href='about.html'"
-            class="w-auto flex items-center gap-2 bg-[#6B1E6F] font-semibold text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#B33791]/50"
+            class="w-auto flex items-center gap-2 bg-[#B33791] hover:bg-[#6B1E6F] font-semibold text-white px-6 py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#B33791]/50"
           >
             <svg
               class="w-5 h-5"
@@ -202,7 +199,7 @@
           </button>
           <button
             onclick="window.location.href='contact.html'"
-            class="w-auto flex items-center gap-2 bg-white border-2 border-[#B33791] font-semibold text-[#B33791] px-6 py-3 rounded-xl shadow-lg hover:bg-[#B33791] hover:text-white hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#B33791]/50"
+            class="w-auto flex items-center gap-2 bg-white border-2 border-[#6B1E6F] font-semibold text-[#6B1E6F] px-6 py-3 rounded-xl shadow-lg hover:bg-[#6B1E6F] hover:text-white hover:shadow-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#B33791]/50"
           >
             <svg
               class="w-5 h-5"
@@ -685,7 +682,7 @@
     </div>
 
     <!-- section 5 blogs -->
-    <section class="relative py-16 px-6 md:px-12 lg:px-20 my-10">
+    <section class="relative py-16 px-6 md:px-12 lg:px-20">
       <div class="max-w-7xl mx-auto">
         <!-- Title -->
         <div class="flex justify-between items-center">
@@ -738,7 +735,7 @@
               <a
                 href="/blog.html#blog1"
                 class="text-[#B33791] font-medium text-sm hover:underline"
-                >Read More →</a
+                >Read More »</a
               >
             </div>
           </div>
@@ -765,7 +762,7 @@
               <a
                 href="/blog.html#blog2"
                 class="text-[#B33791] font-medium text-sm hover:underline"
-                >Read More →</a
+                >Read More »</a
               >
             </div>
           </div>
@@ -792,7 +789,7 @@
               <a
                 href="/blog.html#blog3"
                 class="text-[#B33791] font-medium text-sm hover:underline"
-                >Read More →</a
+                >Read More »</a
               >
             </div>
           </div>
@@ -801,20 +798,18 @@
     </section>
 
     <!-- article section -->
-    <section class="relative py-16 px-2 md:px-12 lg:px-16 my-10">
+    <section class="relative py-16 px-2 md:px-12 lg:px-16">
       <div class="max-w-7xl mx-auto">
         <!-- Title -->
-        <div class="flex gap-2">
-          <div class="mt-1">
-            <img
-              src="./assets/articles.png"
-              class="h-[30px] w-[30px]"
-              alt="Articles Icon"
-            />
-          </div>
-          <h2
-            class="text-2xl sm:text-3xl text-[#6B1E6F] text-center font-semibold"
-          >
+        <div
+          class="flex justify-start items-center mt-10 mb-8 gap-2 ml-4 sm:ml-0"
+        >
+          <img
+            src="./assets/articles.png"
+            class="h-[40px] w-[40px]"
+            alt="Blog Icon"
+          />
+          <h2 class="text-2xl sm:text-3xl font-semibold text-[#6B1E6F]">
             Article
           </h2>
         </div>
