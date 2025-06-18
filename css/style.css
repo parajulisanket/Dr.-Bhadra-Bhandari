@@ -193,3 +193,8 @@ p {
 .fade-up-signature {
   animation: fadeUpSignature 3s ease-in-out forwards;
 }
+
+/* Diagonal  image effect on desktop */
+.hero-bg-img-diagonal {
+  clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%);
+}

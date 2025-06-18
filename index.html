@@ -93,8 +93,9 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
+    <!-- hero section -->
     <section
-      class="bg-gradient-to-br from-[#F7F0FA] via-[#F7F8FC] to-white relative min-h-screen flex flex-col md:flex-row items-center overflow-hidden px-4"
+      class="relative min-h-screen flex flex-col md:flex-row items-center overflow-hidden px-4"
     >
       <!-- Mobile: Image at top, visible only on mobile -->
       <div class="block md:hidden w-full relative h-64 mt-20">
@@ -120,29 +121,40 @@
         />
       </div>
 
-      <!-- Desktop: Fading Images as background, visible only on desktop -->
+      <!-- Desktop: Fading Images as angled background, visible only on desktop -->
       <div class="hidden md:block absolute right-0 top-0 h-full w-1/2 z-0">
         <div id="hero-bg-rotator" class="relative h-full w-full">
           <img
             src="./assets/landing1copy.jpeg"
-            class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100"
+            class="hero-bg-img-diagonal hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100"
             style="opacity: 1"
           />
           <img
             src="./assets/landing2copy.jpeg"
-            class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+            class="hero-bg-img-diagonal hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
             style="opacity: 0"
           />
           <img
             src="./assets/landing3.jpeg"
-            class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+            class="hero-bg-img-diagonal hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
             style="opacity: 0"
           />
           <img
             src="./assets/landing4.jpeg"
-            class="hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+            class="hero-bg-img-diagonal hero-bg-img absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
             style="opacity: 0"
           />
+          <!-- Gradient overlay  -->
+          <div
+            class="absolute inset-0 w-full h-full pointer-events-none"
+            style="
+              background: linear-gradient(
+                to left,
+                rgba(255, 255, 255, 0) 80%,
+                rgba(255, 255, 255, 1) 100%
+              );
+            "
+          ></div>
         </div>
       </div>
 
