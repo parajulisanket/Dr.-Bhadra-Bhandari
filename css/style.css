@@ -7,8 +7,6 @@ html {
 * {
   margin: 0;
   padding: 0;
-  /* outline: 1px solid red; */
-  /* overflow-x: hidden; */
 }
 
 body {
@@ -194,7 +192,7 @@ p {
   animation: fadeUpSignature 3s ease-in-out forwards;
 }
 
-/* Diagonal  image effect on desktop */
+/* Diagonal  image  on desktop view*/
 .hero-bg-img-diagonal {
   clip-path: polygon(18% 0, 100% 0, 100% 100%, 0% 100%);
 }
